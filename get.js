@@ -1,7 +1,8 @@
 import { load } from "cheerio";
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, createWriteStream } from "fs";
 import { writeFile } from "fs/promises";
 import fetch from "node-fetch";
+import request from "request";
 
 const htmlText = await fetch("https://cses.fi/problemset/list/").then((r) =>
   r.text()
@@ -12,6 +13,12 @@ const $ = load(htmlText);
 const links = $("[href]");
 
 writeFileSync("index.html", htmlText);
+
+function download(uri, filename, callback) {
+  request.head(uri, function () {
+    request(uri).pipe(createWriteStream(filename)).on("close", callback);
+  });
+}
 
 links
   .toArray()
@@ -28,9 +35,26 @@ links
       mkdirSync(path, { recursive: true });
 
       const pageText = await fetch(problemLink, {}).then((r) => r.text());
+
       writeFileSync("./" + url, pageText);
+
+      const $problem = load(pageText);
+
+      $problem("img")
+        .toArray()
+        .filter((node) => node.attribs["src"].includes("file"))
+        .forEach(async (img) => {
+          download(
+            `https://cses.fi${img.attribs["src"]}`,
+            "." + img.attribs["src"],
+            function () {
+              console.log(`downloaded image: ${img.attribs["src"]}`);
+            }
+          );
+        });
     } catch (e) {
       console.log(`failed ${problemLink}`);
+      console.error(e);
     }
   });
 
