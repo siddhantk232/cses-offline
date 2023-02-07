@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Signal Processing</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2113/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2113/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Signal Processing</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2113">
+You are given two integer sequences: a signal and a mask. Your task is to process the signal by moving the mask through the signal from left to right. At each mask position calculate the sum of products of aligned signal and mask values in the part where the signal and the mask overlap.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line consists of two integers $n$ and $m$: the length of the signal and the length of the mask.<br />
+<br />
+The next line consists of $n$ integers $a_1,a_2,\ldots,a_n$ defining the signal.<br />
+<br />
+The last line consists of $m$ integers $b_1,b_2,\ldots,b_m$ defining the mask. <br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print $n+m-1$ integers: the sum of products of aligned values at each mask position from left to right.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n,m \le 2 \cdot 10^5$<br />
+<li>$1 \le a_i,b_i \le 100$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5 3<br />
+1 3 2 1 4<br />
+1 2 3<br />
+</code><br />
+Output:<br />
+<code>3 11 13 10 16 9 4</code><br />
+<br />
+Explanation: For example, at the second mask position the sum of aligned products is $2 \cdot 1 + 3 \cdot 3 = 11$.    </div>
+    <div class="nav sidebar">
+<h4>Advanced Techniques</h4>...
+<a  href="/problemset/task/2088">Knuth Division<span class="task-score icon "></span></a><a  href="/problemset/task/2111">Apples and Bananas<span class="task-score icon "></span></a><a  href="/problemset/task/2112">One Bit Positions<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2113">Signal Processing<span class="task-score icon "></span></a><a  href="/problemset/task/2101">New Roads Queries<span class="task-score icon "></span></a><a  href="/problemset/task/2133">Dynamic Connectivity<span class="task-score icon "></span></a><a  href="/problemset/task/2121">Parcel Delivery<span class="task-score icon "></span></a><a  href="/problemset/task/2129">Task Assignment<span class="task-score icon "></span></a>...
+      <hr />

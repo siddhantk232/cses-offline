@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>List of Sums</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2414/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2414/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - List of Sums</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2414">
+List $A$ consists of $n$ positive integers, and list $B$ contains the sum of each element pair of list $A$.<br />
+<br />
+For example, if $A=[1,2,3]$, then $B=[3,4,5]$, and if $A=[1,3,3,3]$, then $B=[4,4,4,6,6,6]$.<br />
+<br />
+Given list $B$, your task is to reconstruct list $A$.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $n$: the size of list $A$.<br />
+<br />
+The next line has $\frac{n(n-1)}{2}$ integers: the contents of list $B$.<br />
+<br />
+You can assume that there is a list $A$ that corresponds to the input, and each value in $A$ is between $1 \dots k$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print $n$ integers: the contents of list $A$.<br />
+<br />
+You can print the values in any order. If there are more than one solution, you can print any of them.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$3 \le n \le 100$<br />
+<li>$1 \le k \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4<br />
+4 4 4 6 6 6</code><br />
+<br />
+Output:<br />
+<code>1 3 3 3</code><br />
+<br />
+Explanation: In this case list $A$ can be either $[1,3,3,3]$ or $[2,2,2,4]$ and both solutions are accepted.    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/1147">Maximum Building I<span class="task-score icon "></span></a><a  href="/problemset/task/1162">Sorting Methods<span class="task-score icon "></span></a><a  href="/problemset/task/1191">Cyclic Array<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2414">List of Sums<span class="task-score icon "></span></a><a  href="/problemset/task/2132">Increasing Array II<span class="task-score icon "></span></a><a  href="/problemset/task/1189">Food Division<span class="task-score icon "></span></a><a  href="/problemset/task/1654">Bit Problem<span class="task-score icon "></span></a><a  href="/problemset/task/1698">Swap Round Sorting<span class="task-score icon "></span></a>...
+      <hr />

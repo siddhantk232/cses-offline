@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Stick Game</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1729/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1729/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Stick Game</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1729">
+Consider a game where two players remove sticks from a heap. The players move alternately, and the player who removes the last stick wins the game.<br />
+<br />
+A set $P=\{p_1,p_2,\ldots,p_k\}$ determines the allowed moves. For example, if $P=\{1,3,4\}$, a player may remove $1$, $3$ or $4$ sticks.<br />
+<br />
+Your task is find out for each number of sticks $1,2,\dots,n$ if the first player has a winning or losing position.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $k$: the number of sticks and moves.<br />
+<br />
+The next line has $k$ integers $p_1,p_2,\dots,p_k$ that describe the allowed moves. All integers are distinct, and one of them is $1$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print a string containing $n$ characters: <code>W</code> means a winning position, and <code>L</code> means a losing position.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^6$<br />
+<li>$1 \le k \le 100$<br />
+<li>$1 \le p_i \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>10 3<br />
+1 3 4</code><br />
+<br />
+Output:<br />
+<code>WLWWWWLWLW</code>    </div>
+    <div class="nav sidebar">
+<h4>Mathematics</h4>...
+<a  href="/problemset/task/1726">Moving Robots<span class="task-score icon "></span></a><a  href="/problemset/task/1727">Candy Lottery<span class="task-score icon "></span></a><a  href="/problemset/task/1728">Inversion Probability<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1729">Stick Game<span class="task-score icon "></span></a><a  href="/problemset/task/1730">Nim Game I<span class="task-score icon "></span></a><a  href="/problemset/task/1098">Nim Game II<span class="task-score icon "></span></a><a  href="/problemset/task/1099">Stair Game<span class="task-score icon "></span></a><a  href="/problemset/task/2207">Grundy's Game<span class="task-score icon "></span></a>...
+      <hr />

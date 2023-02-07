@@ -1,0 +1,110 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Point in Polygon</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2192/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2192/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Point in Polygon</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2192">
+You are given a polygon of $n$ vertices and a list of $m$ points. Your task is to determine for each point if it is inside, outside or on the boundary of the polygon.<br />
+<br />
+The polygon consists of $n$ vertices $(x_1,y_1),(x_2,y_2),\dots,(x_n,y_n)$. The vertices $(x_i,y_i)$ and $(x_{i+1},y_{i+1})$ are adjacent for $i=1,2,\dots,n-1$, and the vertices $(x_1,y_1)$ and $(x_n,y_n)$ are also adjacent.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the number of vertices in the polygon and the number of points.<br />
+<br />
+After this, there are $n$ lines that describe the polygon. The $i$th such line has two integers $x_i$ and $y_i$.<br />
+<br />
+You may assume that the polygon is simple, i.e., it does not intersect itself.<br />
+<br />
+Finally, there are $m$ lines that describe the points. Each line has two integers $x$ and $y$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+For each point, print &quot;INSIDE&quot;, &quot;OUTSIDE&quot; or &quot;BOUNDARY&quot;.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$3 \le n,m \le 1000$<br />
+<li>$1 \le m \le 1000$<br />
+<li>$-10^9 \le x_i, y_i \le 10^9$<br />
+<li>$-10^9 \le x, y \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4 3<br />
+1 1<br />
+4 2<br />
+3 5<br />
+1 4<br />
+2 3<br />
+3 1<br />
+1 3</code><br />
+<br />
+Output:<br />
+<code>INSIDE<br />
+OUTSIDE<br />
+BOUNDARY</code>    </div>
+    <div class="nav sidebar">
+<h4>Geometry</h4><a  href="/problemset/task/2189">Point Location Test<span class="task-score icon "></span></a><a  href="/problemset/task/2190">Line Segment Intersection<span class="task-score icon "></span></a><a  href="/problemset/task/2191">Polygon Area<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2192">Point in Polygon<span class="task-score icon "></span></a><a  href="/problemset/task/2193">Polygon Lattice Points<span class="task-score icon "></span></a><a  href="/problemset/task/2194">Minimum Euclidean Distance<span class="task-score icon "></span></a><a  href="/problemset/task/2195">Convex Hull<span class="task-score icon "></span></a>      <hr />

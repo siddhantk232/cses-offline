@@ -1,0 +1,91 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Repetitions</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1069/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1069/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Repetitions</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1069">
+You are given a DNA sequence: a string consisting of characters A, C, G, and T. Your task is to find the longest repetition in the sequence. This is a maximum-length substring containing only one type of character.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line contains a string of $n$ characters.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the length of the longest repetition.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^6$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>ATTCGGGA</code><br />
+<br />
+Output:<br />
+<code>3</code>    </div>
+    <div class="nav sidebar">
+<h4>Introductory Problems</h4><a  href="/problemset/task/1068">Weird Algorithm<span class="task-score icon "></span></a><a  href="/problemset/task/1083">Missing Number<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1069">Repetitions<span class="task-score icon "></span></a><a  href="/problemset/task/1094">Increasing Array<span class="task-score icon "></span></a><a  href="/problemset/task/1070">Permutations<span class="task-score icon "></span></a><a  href="/problemset/task/1071">Number Spiral<span class="task-score icon "></span></a><a  href="/problemset/task/1072">Two Knights<span class="task-score icon "></span></a><a  href="/problemset/task/1092">Two Sets<span class="task-score icon "></span></a>...
+      <hr />

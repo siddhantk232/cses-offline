@@ -1,0 +1,107 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Dynamic Connectivity</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2133/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2133/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Dynamic Connectivity</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2133">
+Consider an undirected graph that consists of $n$ nodes and $m$ edges. There are two types of events that can happen:<ol>
+<li>A new edge is created between nodes $a$ and $b$.<br />
+<li>An existing edge between nodes $a$ and $b$ is removed.<br />
+</ol>
+Your task is to report the number of components after every event.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has three integers $n$, $m$ and $k$: the number of nodes, edges and events.<br />
+<br />
+After this there are $m$ lines describing the edges. Each line has two integers $a$ and $b$: there is an edge between nodes $a$ and $b$. There is at most one edge between any pair of nodes.<br />
+<br />
+Then there are $k$ lines describing the events. Each line has the form &quot;$t$ $a$ $b$&quot; where $t$ is 1 (create a new edge) or 2 (remove an edge). A new edge is always created between two nodes that do not already have an edge between them, and only existing edges can get removed.<br />
+ <br />
+<b id="output">Output</b><br />
+<br />
+Print $k+1$ integers: first the number of components before the first event, and after this the new number of components after each event.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$2 \le n \le 10^5$<br />
+<li>$1 \le m,k \le 10^5$<br />
+<li>$1 \le a,b \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5 3 3<br />
+1 4<br />
+2 3<br />
+3 5<br />
+1 2 5<br />
+2 3 5<br />
+1 1 2</code><br />
+<br />
+Output:<br />
+<code>2 2 2 1</code>    </div>
+    <div class="nav sidebar">
+<h4>Advanced Techniques</h4>...
+<a  href="/problemset/task/2111">Apples and Bananas<span class="task-score icon "></span></a><a  href="/problemset/task/2112">One Bit Positions<span class="task-score icon "></span></a><a  href="/problemset/task/2113">Signal Processing<span class="task-score icon "></span></a><a  href="/problemset/task/2101">New Roads Queries<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2133">Dynamic Connectivity<span class="task-score icon "></span></a><a  href="/problemset/task/2121">Parcel Delivery<span class="task-score icon "></span></a><a  href="/problemset/task/2129">Task Assignment<span class="task-score icon "></span></a><a  href="/problemset/task/2130">Distinct Routes II<span class="task-score icon "></span></a>      <hr />

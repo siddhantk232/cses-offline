@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Message Route</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1667/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1667/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Message Route</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1667">
+Syrjälä's network has $n$ computers and $m$ connections. Your task is to find out if Uolevi can send a message to Maija, and if it is possible, what is the minimum number of computers on such a route.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the number of computers and connections. The computers are numbered $1,2,\dots,n$. Uolevi's computer is $1$ and Maija's computer is $n$.<br />
+<br />
+Then, there are $m$ lines describing the connections. Each line has two integers $a$ and $b$: there is a connection between those computers.<br />
+<br />
+Every connection is between two different computers, and there is at most one connection between any two computers.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+If it is possible to send a message, first print $k$: the minimum number of computers on a valid route. After this, print an example of such a route. You can print any valid solution.<br />
+<br />
+If there are no routes, print &quot;IMPOSSIBLE&quot;.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$2 \le n \le 10^5$<br />
+<li>$1 \le m \le 2 \cdot 10^5$<br />
+<li>$1 \le a,b \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5 5<br />
+1 2<br />
+1 3<br />
+1 4<br />
+2 3<br />
+5 4</code><br />
+<br />
+Output:<br />
+<code>3<br />
+1 4 5</code>    </div>
+    <div class="nav sidebar">
+<h4>Graph Algorithms</h4><a  href="/problemset/task/1192">Counting Rooms<span class="task-score icon "></span></a><a  href="/problemset/task/1193">Labyrinth<span class="task-score icon "></span></a><a  href="/problemset/task/1666">Building Roads<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1667">Message Route<span class="task-score icon "></span></a><a  href="/problemset/task/1668">Building Teams<span class="task-score icon "></span></a><a  href="/problemset/task/1669">Round Trip<span class="task-score icon "></span></a><a  href="/problemset/task/1194">Monsters<span class="task-score icon "></span></a><a  href="/problemset/task/1671">Shortest Routes I<span class="task-score icon "></span></a>...
+      <hr />

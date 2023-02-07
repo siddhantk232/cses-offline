@@ -1,0 +1,111 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Network Breakdown</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1677/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1677/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Network Breakdown</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1677">
+Syrjälä's network has $n$ computers and $m$ connections between them. The network consists of components of computers that can send messages to each other.<br />
+<br />
+Nobody in Syrjälä understands how the network works. For this reason, if a connection breaks down, nobody will repair it. In this situation a component may be divided into two components.<br />
+<br />
+Your task is to calculate the number of components after each connection breakdown.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has three integers $n$, $m$ and $k$: the number of computers, connections and breakdowns. The computers are numbered $1,2,\dots,n$.<br />
+<br />
+Then, there are $m$ lines describing the connections. Each line has two integers $a$ and $b$: there is a connection between computers $a$ and $b$. Each connection is between two different computers, and there is at most one connection between two computers.<br />
+<br />
+Finally, there are $k$ lines describing the breakdowns. Each line has two integers $a$ and $b$: the connection between computers $a$ and $b$ breaks down.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+After each breakdown, print the number of components.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^5$<br />
+<li>$1 \le m \le 2 \cdot 10^5$<br />
+<li>$1 \le k \le m$<br />
+<li>$1 \le a,b \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5 5 3<br />
+1 2<br />
+1 3<br />
+2 3<br />
+3 4<br />
+4 5<br />
+3 4<br />
+2 3<br />
+4 5</code><br />
+<br />
+Output:<br />
+<code>2 2 3</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/2075">Reversal Sorting<span class="task-score icon "></span></a><a  href="/problemset/task/2421">Counting Reorders<span class="task-score icon "></span></a><a  href="/problemset/task/1159">Book Shop II<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1677">Network Breakdown<span class="task-score icon "></span></a><a  href="/problemset/task/1203">Visiting Cities<span class="task-score icon "></span></a><a  href="/problemset/task/2184">Missing Coin Sum Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1157">Number Grid<span class="task-score icon "></span></a><a  href="/problemset/task/1148">Maximum Building II<span class="task-score icon "></span></a>...
+      <hr />

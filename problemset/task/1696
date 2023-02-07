@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>School Dance</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1696/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1696/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - School Dance</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1696">
+There are $n$ boys and $m$ girls in a school. Next week a school dance will be organized. A dance pair consists of a boy and a girl, and there are $k$ potential pairs.<br />
+<br />
+Your task is to find out the maximum number of dance pairs and show how this number can be achieved.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has three integers $n$, $m$ and $k$: the number of boys, girls, and potential pairs. The boys are numbered $1,2,\dots,n$, and the girls are numbered $1,2,\dots,m$.<br />
+<br />
+After this, there are $k$ lines describing the potential pairs. Each line has two integers $a$ and $b$: boy $a$ and girl $b$ are willing to dance together.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+First print one integer $r$: the maximum number of dance pairs. After this, print $r$ lines describing the pairs. You can print any valid solution.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n,m \le 500$<br />
+<li>$1 \le k \le 1000$<br />
+<li>$1 \le a \le n$<br />
+<li>$1 \le b \le m$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>3 2 4<br />
+1 1<br />
+1 2<br />
+2 1<br />
+3 1</code><br />
+<br />
+Output:<br />
+<code>2<br />
+1 2<br />
+3 1</code>    </div>
+    <div class="nav sidebar">
+<h4>Graph Algorithms</h4>...
+<a  href="/problemset/task/1692">De Bruijn Sequence<span class="task-score icon "></span></a><a  href="/problemset/task/1693">Teleporters Path<span class="task-score icon "></span></a><a  href="/problemset/task/1690">Hamiltonian Flights<span class="task-score icon "></span></a><a  href="/problemset/task/1689">Knight's Tour<span class="task-score icon "></span></a><a  href="/problemset/task/1694">Download Speed<span class="task-score icon "></span></a><a  href="/problemset/task/1695">Police Chase<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1696">School Dance<span class="task-score icon "></span></a><a  href="/problemset/task/1711">Distinct Routes<span class="task-score icon "></span></a>      <hr />

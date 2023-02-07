@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Distinct Colors</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1139/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1139/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Distinct Colors</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1139">
+You are given a rooted tree consisting of $n$ nodes. The nodes are numbered $1,2,\ldots,n$, and node $1$ is the root. Each node has a color.<br />
+<br />
+Your task is to determine for each node the number of distinct colors in the subtree of the node.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains an integer $n$: the number of nodes. The nodes are numbered $1,2,\ldots,n$.<br />
+<br />
+The next line consists of $n$ integers $c_1,c_2,\ldots,c_n$: the color of each node.<br />
+<br />
+Then there are $n-1$ lines describing the edges. Each line contains two integers $a$ and $b$: there is an edge between nodes $a$ and $b$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print $n$ integers: for each node $1,2,\ldots,n$, the number of distinct colors.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 2 \cdot 10^5$<br />
+<li>$1 \le a,b \le n$<br />
+<li>$1 \le c_i \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5<br />
+2 3 2 2 1<br />
+1 2<br />
+1 3<br />
+3 4<br />
+3 5</code><br />
+<br />
+Output:<br />
+<code>3 1 2 1 1</code>    </div>
+    <div class="nav sidebar">
+<h4>Tree Algorithms</h4>...
+<a  href="/problemset/task/1136">Counting Paths<span class="task-score icon "></span></a><a  href="/problemset/task/1137">Subtree Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1138">Path Queries<span class="task-score icon "></span></a><a  href="/problemset/task/2134">Path Queries II<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1139">Distinct Colors<span class="task-score icon "></span></a><a  href="/problemset/task/2079">Finding a Centroid<span class="task-score icon "></span></a><a  href="/problemset/task/2080">Fixed-Length Paths I<span class="task-score icon "></span></a><a  href="/problemset/task/2081">Fixed-Length Paths II<span class="task-score icon "></span></a>      <hr />

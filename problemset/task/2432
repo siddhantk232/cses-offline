@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Grid Puzzle I</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2432/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2432/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Grid Puzzle I</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2432">
+There is an $n \times n$ grid, and your task is to choose from each row and column some number of squares. How can you do that?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $n$: the size of the grid. The rows and columns are numbered $1,2,\dots,n$.<br />
+<br />
+The next line has $n$ integers $a_1,a_2,\ldots,a_n$: You must choose exactly $a_i$ squares from the $i$th row.<br />
+<br />
+The las line has $n$ integers $b_1,b_2,\ldots,b_n$: You must choose exactly $b_j$ squares from the $j$th column.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print $n$ lines describing which squares you choose (<code>X</code> means that you choose a square, <code>.</code> means that you don't choose it). You can print any valid solution.<br />
+<br />
+If it is not possible to satisfy the conditions print only $-1$.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 50$<br />
+<li>$0 \le a_i \le n$<br />
+<li>$0 \le b_j \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5<br />
+0 1 3 2 0<br />
+1 2 2 0 1</code><br />
+<br />
+Output:<br />
+<code>.....<br />
+..X..<br />
+.XX.X<br />
+XX...<br />
+.....</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/2174">Removing Digits II<span class="task-score icon "></span></a><a  href="/problemset/task/2180">Coin Arrangement<span class="task-score icon "></span></a><a  href="/problemset/task/2176">Counting Bishops<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2432">Grid Puzzle I<span class="task-score icon "></span></a><a  href="/problemset/task/2131">Grid Puzzle II<span class="task-score icon "></span></a><a  href="/problemset/task/1080">Empty String<span class="task-score icon "></span></a><a  href="/problemset/task/1078">Grid Paths<span class="task-score icon "></span></a><a  href="/problemset/task/2115">Bit Substrings<span class="task-score icon "></span></a>...
+      <hr />

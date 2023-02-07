@@ -1,0 +1,102 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Giant Pizza</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1684/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1684/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Giant Pizza</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1684">
+Uolevi's family is going to order a large pizza and eat it together. A total of $n$ family members will join the order, and there are $m$ possible toppings. The pizza may have any number of toppings.<br />
+<br />
+Each family member gives two wishes concerning the toppings of the pizza. The wishes are of the form &quot;topping $x$ is good/bad&quot;. Your task is to choose the toppings so that at least one wish from everybody becomes true (a good topping is included in the pizza or a bad topping is not included).<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the number of family members and toppings. The toppings are numbered $1,2,\dots,m$.<br />
+<br />
+After this, there are $n$ lines describing the wishes. Each line has two wishes of the form &quot;+ $x$&quot; (topping $x$ is good) or &quot;- $x$&quot; (topping $x$ is bad).<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print a line with $m$ symbols: for each topping &quot;+&quot; if it is included and &quot;-&quot; if it is not included. You can print any valid solution.<br />
+<br />
+If there are no valid solutions, print &quot;IMPOSSIBLE&quot;.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n,m \le 10^5$<br />
+<li>$1 \le x \le m$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>3 5<br />
++ 1 + 2<br />
+- 1 + 3<br />
++ 4 - 2</code><br />
+<br />
+Output:<br />
+<code>- + + + -</code>    </div>
+    <div class="nav sidebar">
+<h4>Graph Algorithms</h4>...
+<a  href="/problemset/task/1676">Road Construction<span class="task-score icon "></span></a><a  href="/problemset/task/1682">Flight Routes Check<span class="task-score icon "></span></a><a  href="/problemset/task/1683">Planets and Kingdoms<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1684">Giant Pizza<span class="task-score icon "></span></a><a  href="/problemset/task/1686">Coin Collector<span class="task-score icon "></span></a><a  href="/problemset/task/1691">Mail Delivery<span class="task-score icon "></span></a><a  href="/problemset/task/1692">De Bruijn Sequence<span class="task-score icon "></span></a><a  href="/problemset/task/1693">Teleporters Path<span class="task-score icon "></span></a>...
+      <hr />

@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Prime Multiples</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2185/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2185/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Prime Multiples</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2185">
+You are given $k$ distinct prime numbers $a_1,a_2,\ldots,a_k$ and an integer $n$.<br />
+<br />
+Your task is to calculate how many of the first $n$ positive integers are divisible by at least one of the given prime numbers.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $k$.<br />
+<br />
+The second line has $k$ prime numbers $a_1,a_2,\ldots,a_k$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the number integers within the interval $1,2,\ldots,n$ that are divisible by at least one of the prime numbers.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li> $1 \le n \le 10^{18}$<br />
+<li> $1 \le k \le 20$<br />
+<li> $2 \le a_i \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>20 2<br />
+2 5</code><br />
+<br />
+Output:<br />
+<code>12</code><br />
+<br />
+Explanation: the $12$ numbers are $2,4,5,6,8,10,12,14,15,16,18,20$.    </div>
+    <div class="nav sidebar">
+<h4>Mathematics</h4>...
+<a  href="/problemset/task/1081">Common Divisors<span class="task-score icon "></span></a><a  href="/problemset/task/1082">Sum of Divisors<span class="task-score icon "></span></a><a  href="/problemset/task/2182">Divisor Analysis<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2185">Prime Multiples<span class="task-score icon "></span></a><a  href="/problemset/task/2417">Counting Coprime Pairs<span class="task-score icon "></span></a><a  href="/problemset/task/1079">Binomial Coefficients<span class="task-score icon "></span></a><a  href="/problemset/task/1715">Creating Strings II<span class="task-score icon "></span></a><a  href="/problemset/task/1716">Distributing Apples<span class="task-score icon "></span></a>...
+      <hr />

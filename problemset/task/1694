@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Download Speed</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1694/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1694/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Download Speed</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1694">
+Consider a network consisting of $n$ computers and $m$ connections. Each connection specifies how fast a computer can send data to another computer.<br />
+<br />
+Kotivalo wants to download some data from a server. What is the maximum speed he can do this, using the connections in the network?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the number of computers and connections. The computers are numbered $1,2,\dots,n$. Computer $1$ is the server and computer $n$ is Kotivalo's computer.<br />
+<br />
+After this, there are $m$ lines describing the connections. Each line has three integers $a$, $b$ and $c$: computer $a$ can send data to computer $b$ at speed $c$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the maximum speed Kotivalo can download data.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 500$<br />
+<li>$1 \le m \le 1000$<br />
+<li>$1 \le a,b \le n$<br />
+<li>$1 \le c \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4 5<br />
+1 2 3<br />
+2 4 2<br />
+1 3 4<br />
+3 4 5<br />
+4 1 3</code><br />
+<br />
+Output:<br />
+<code>6</code>    </div>
+    <div class="nav sidebar">
+<h4>Graph Algorithms</h4>...
+<a  href="/problemset/task/1692">De Bruijn Sequence<span class="task-score icon "></span></a><a  href="/problemset/task/1693">Teleporters Path<span class="task-score icon "></span></a><a  href="/problemset/task/1690">Hamiltonian Flights<span class="task-score icon "></span></a><a  href="/problemset/task/1689">Knight's Tour<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1694">Download Speed<span class="task-score icon "></span></a><a  href="/problemset/task/1695">Police Chase<span class="task-score icon "></span></a><a  href="/problemset/task/1696">School Dance<span class="task-score icon "></span></a><a  href="/problemset/task/1711">Distinct Routes<span class="task-score icon "></span></a>      <hr />

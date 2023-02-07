@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Maximum Building II</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1148/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1148/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Maximum Building II</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1148">
+You are given a map of a forest where some squares are empty and some squares have trees.<br />
+<br />
+You want to place a rectangular building in the forest so that no trees need to be cut down. For each building size, your task is to calculate the number of ways you can do this.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains integers $n$ and $m$: the size of the forest.<br />
+<br />
+After this, the forest is described. Each square is empty (<code>.</code>) or has trees (<code>*</code>).<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print $n$ lines each containing $m$ integers.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n,m \le 1000$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4 7<br />
+...*.*.<br />
+.*.....<br />
+.......<br />
+......*</code><br />
+<br />
+Output:<br />
+<code>24 17 13 9 6 3 1 <br />
+16 9 7 5 3 1 0 <br />
+9 3 2 1 0 0 0 <br />
+3 0 0 0 0 0 0</code><br />
+<br />
+Explanation: For example, there are $5$ possible places for a building of size $2 \times 4$.    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/1203">Visiting Cities<span class="task-score icon "></span></a><a  href="/problemset/task/2184">Missing Coin Sum Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1157">Number Grid<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1148">Maximum Building II<span class="task-score icon "></span></a><a  href="/problemset/task/2423">Filling Trominos<span class="task-score icon "></span></a><a  href="/problemset/task/1161">Stick Divisions<span class="task-score icon "></span></a><a  href="/problemset/task/1665">Coding Company<span class="task-score icon "></span></a><a  href="/problemset/task/1699">Flight Route Requests<span class="task-score icon "></span></a>...
+      <hr />

@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Cyclic Array</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1191/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1191/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Cyclic Array</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1191">
+You are given a cyclic array consisting of $n$ values. Each element has two neighbors; the elements at positions $n$ and $1$ are also considered neighbors.<br />
+<br />
+Your task is to divide the array into subarrays so that the sum of each subarray is at most $k$. What is the minimum number of subarrays?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains integers $n$ and $k$.<br />
+<br />
+The next line has $n$ integers $x_1,x_2,\ldots,x_n$: the contents of the array.<br />
+<br />
+There is always at least one division (i.e., no value in the array is larger than $k$).<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the minimum number of subarrays.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li> $1 \le n \le 2 \cdot 10^5$<br />
+<li> $1 \le x_i \le 10^9$<br />
+<li> $1 \le k \le 10^{18}$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>8 5<br />
+2 2 2 1 3 1 2 1</code><br />
+<br />
+Output:<br />
+<code>3</code><br />
+<br />
+Explanation: We can create three subarrays: $[2,2,1]$, $[3,1]$, and $[2,1,2]$ (remember that the array is cyclic).    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/2427">Letter Pair Move Game<span class="task-score icon "></span></a><a  href="/problemset/task/1147">Maximum Building I<span class="task-score icon "></span></a><a  href="/problemset/task/1162">Sorting Methods<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1191">Cyclic Array<span class="task-score icon "></span></a><a  href="/problemset/task/2414">List of Sums<span class="task-score icon "></span></a><a  href="/problemset/task/2132">Increasing Array II<span class="task-score icon "></span></a><a  href="/problemset/task/1189">Food Division<span class="task-score icon "></span></a><a  href="/problemset/task/1654">Bit Problem<span class="task-score icon "></span></a>...
+      <hr />

@@ -1,0 +1,99 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Minimum Euclidean Distance</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2194/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2194/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Minimum Euclidean Distance</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2194">
+Given a set of points in the two-dimensional plane, your task is to find the minimum Euclidean distance between two distinct points.<br />
+<br />
+The Euclidean distance of points $(x_1,y_1)$ and $(x_2,y_2)$ is $\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $n$: the number of points.<br />
+<br />
+After this, there are $n$ lines that describe the points. Each line has two integers $x$ and $y$. You may assume that each point is distinct.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: $d^2$ where $d$ is the minimum Euclidean distance (this ensures that the result is an integer).<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$2 \le n \le 2 \cdot 10^5$<br />
+<li>$-10^9 \le x,y \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4<br />
+2 1<br />
+4 4<br />
+1 2<br />
+6 3</code><br />
+<br />
+Output:<br />
+<code>2</code>    </div>
+    <div class="nav sidebar">
+<h4>Geometry</h4><a  href="/problemset/task/2189">Point Location Test<span class="task-score icon "></span></a><a  href="/problemset/task/2190">Line Segment Intersection<span class="task-score icon "></span></a><a  href="/problemset/task/2191">Polygon Area<span class="task-score icon "></span></a><a  href="/problemset/task/2192">Point in Polygon<span class="task-score icon "></span></a><a  href="/problemset/task/2193">Polygon Lattice Points<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2194">Minimum Euclidean Distance<span class="task-score icon "></span></a><a  href="/problemset/task/2195">Convex Hull<span class="task-score icon "></span></a>      <hr />

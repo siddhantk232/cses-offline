@@ -1,0 +1,99 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Traffic Lights</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1163/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1163/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Traffic Lights</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1163">
+There is a street of length $x$ whose positions are numbered $0,1,\ldots,x$. Initially there are no traffic lights, but $n$ sets of traffic lights are added to the street one after another.<br />
+<br />
+Your task is to calculate the length of the longest passage without traffic lights after each addition.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains two integers $x$ and $n$: the length of the street and the number of sets of traffic lights.<br />
+<br />
+Then, the next line contains $n$ integers $p_1,p_2,\ldots,p_n$: the position of each set of traffic lights. Each position is distinct.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print the length of the longest passage without traffic lights after each addition.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le x \le 10^9$<br />
+<li>$1 \le n \le 2 \cdot 10^5$<br />
+<li>$0 &lt; p_i &lt; x$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>8 3<br />
+3 6 2</code><br />
+<br />
+Output:<br />
+<code>5 3 3</code>    </div>
+    <div class="nav sidebar">
+<h4>Sorting and Searching</h4>...
+<a  href="/problemset/task/2217">Collecting Numbers II<span class="task-score icon "></span></a><a  href="/problemset/task/1141">Playlist<span class="task-score icon "></span></a><a  href="/problemset/task/1073">Towers<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1163">Traffic Lights<span class="task-score icon "></span></a><a  href="/problemset/task/2162">Josephus Problem I<span class="task-score icon "></span></a><a  href="/problemset/task/2163">Josephus Problem II<span class="task-score icon "></span></a><a  href="/problemset/task/2168">Nested Ranges Check<span class="task-score icon "></span></a><a  href="/problemset/task/2169">Nested Ranges Count<span class="task-score icon "></span></a>...
+      <hr />

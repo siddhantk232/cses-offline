@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Moving Robots</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1726/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1726/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Moving Robots</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1726">
+Each square of an $8 \times 8$ chessboard has a robot. Each robot independently moves $k$ steps, and there can be many robots on the same square.<br />
+<br />
+On each turn, a robot moves one step left, right, up or down, but not outside the board. It randomly chooses a direction among those where it can move.<br />
+<br />
+Your task is to calculate the expected number of <i>empty</i> squares after $k$ turns.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line has an integer $k$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print the expected number of empty squares rounded to six decimal places.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le k \le 100$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>10</code><br />
+<br />
+Output:<br />
+<code>23.120740</code>    </div>
+    <div class="nav sidebar">
+<h4>Mathematics</h4>...
+<a  href="/problemset/task/1723">Graph Paths I<span class="task-score icon "></span></a><a  href="/problemset/task/1724">Graph Paths II<span class="task-score icon "></span></a><a  href="/problemset/task/1725">Dice Probability<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1726">Moving Robots<span class="task-score icon "></span></a><a  href="/problemset/task/1727">Candy Lottery<span class="task-score icon "></span></a><a  href="/problemset/task/1728">Inversion Probability<span class="task-score icon "></span></a><a  href="/problemset/task/1729">Stick Game<span class="task-score icon "></span></a><a  href="/problemset/task/1730">Nim Game I<span class="task-score icon "></span></a>...
+      <hr />

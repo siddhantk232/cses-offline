@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Nim Game II</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1098/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1098/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Nim Game II</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1098">
+There are $n$ heaps of sticks and two players who move alternately. On each move, a player chooses a non-empty heap and removes $1$, $2$, or $3$ sticks. The player who removes the last stick wins the game.<br />
+<br />
+Your task is to find out who wins if both players play optimally.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains an integer $t$: the number of tests. After this, $t$ test cases are described:<br />
+<br />
+The first line contains an integer $n$: the number of heaps.<br />
+<br />
+The next line has $n$ integers $x_1,x_2,\ldots,x_n$: the number of sticks in each heap.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+For each test case, print &quot;first&quot; if the first player wins the game and &quot;second&quot; if the second player wins the game.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le t \le 2 \cdot 10^5$<br />
+<li>$1 \le n \le 2 \cdot 10^5$<br />
+<li>$1 \le x_i \le 10^9$<br />
+<li>the sum of all $n$ is at most $2 \cdot 10^5$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>3<br />
+4<br />
+5 7 2 5<br />
+2<br />
+4 1<br />
+3<br />
+4 4 4</code><br />
+<br />
+Output:<br />
+<code>first<br />
+first<br />
+second</code>    </div>
+    <div class="nav sidebar">
+<h4>Mathematics</h4>...
+<a  href="/problemset/task/1727">Candy Lottery<span class="task-score icon "></span></a><a  href="/problemset/task/1728">Inversion Probability<span class="task-score icon "></span></a><a  href="/problemset/task/1729">Stick Game<span class="task-score icon "></span></a><a  href="/problemset/task/1730">Nim Game I<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1098">Nim Game II<span class="task-score icon "></span></a><a  href="/problemset/task/1099">Stair Game<span class="task-score icon "></span></a><a  href="/problemset/task/2207">Grundy's Game<span class="task-score icon "></span></a><a  href="/problemset/task/2208">Another Game<span class="task-score icon "></span></a>      <hr />

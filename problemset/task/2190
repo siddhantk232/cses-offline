@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Line Segment Intersection</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2190/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2190/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Line Segment Intersection</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2190">
+There are two line segments: the first goes through the points $(x_1,y_1)$ and $(x_2,y_2)$, and the second goes through the points $(x_3,y_3)$ and $(x_4,y_4)$.<br />
+<br />
+Your task is to determine if the line segments intersect, i.e., they have at least one common point.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $t$: the number of tests.<br />
+<br />
+After this, there are $t$ lines that describe the tests. Each line has eight integers $x_1$, $y_1$, $x_2$, $y_2$, $x_3$, $y_3$, $x_4$ and $y_4$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+For each test, print &quot;YES&quot; if the line segments intersect and &quot;NO&quot; otherwise.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le t \le 10^5$<br />
+<li>$-10^9 \le x_1, y_1, x_2, y_2, x_3, y_3, x_4, y_4 \le 10^9$<br />
+<li>$(x_1,y_1) \neq (x_2,y_2)$<br />
+<li>$(x_3,y_3) \neq (x_4,y_4)$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5<br />
+1 1 5 3 1 2 4 3<br />
+1 1 5 3 1 1 4 3<br />
+1 1 5 3 2 3 4 1<br />
+1 1 5 3 2 4 4 1<br />
+1 1 5 3 3 2 7 4</code><br />
+<br />
+Output:<br />
+<code>NO<br />
+YES<br />
+YES<br />
+YES<br />
+YES</code>    </div>
+    <div class="nav sidebar">
+<h4>Geometry</h4><a  href="/problemset/task/2189">Point Location Test<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2190">Line Segment Intersection<span class="task-score icon "></span></a><a  href="/problemset/task/2191">Polygon Area<span class="task-score icon "></span></a><a  href="/problemset/task/2192">Point in Polygon<span class="task-score icon "></span></a><a  href="/problemset/task/2193">Polygon Lattice Points<span class="task-score icon "></span></a><a  href="/problemset/task/2194">Minimum Euclidean Distance<span class="task-score icon "></span></a><a  href="/problemset/task/2195">Convex Hull<span class="task-score icon "></span></a>      <hr />

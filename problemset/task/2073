@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Substring Reversals</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2073/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2073/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Substring Reversals</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2073">
+Given a string, your task is to process operations where you reverse a substring of the string. What is the final string after all the operations?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the length of the string and the number of operations. The characters of the string are numbered $1,2,\dots,n$.<br />
+<br />
+The next line has a string of length $n$ that consists of characters A–Z.<br />
+<br />
+Finally, there are $m$ lines that describe the operations. Each line has two integers $a$ and $b$: you reverse a substring from position $a$ to position $b$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print the final string after all the operations.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li> $1 \le n, m \le 2 \cdot 10^5$<br />
+<li> $1 \le a \le b \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>7 2<br />
+AYBABTU<br />
+3 4<br />
+4 7</code><br />
+<br />
+Output:<br />
+<code>AYAUTBB</code>    </div>
+    <div class="nav sidebar">
+<h4>Advanced Techniques</h4>...
+<a  href="/problemset/task/2138">Reachable Nodes<span class="task-score icon "></span></a><a  href="/problemset/task/2143">Reachability Queries<span class="task-score icon "></span></a><a  href="/problemset/task/2072">Cut and Paste<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2073">Substring Reversals<span class="task-score icon "></span></a><a  href="/problemset/task/2074">Reversals and Sums<span class="task-score icon "></span></a><a  href="/problemset/task/2076">Necessary Roads<span class="task-score icon "></span></a><a  href="/problemset/task/2077">Necessary Cities<span class="task-score icon "></span></a><a  href="/problemset/task/2078">Eulerian Subgraphs<span class="task-score icon "></span></a>...
+      <hr />

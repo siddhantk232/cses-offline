@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>String Functions</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2107/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2107/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - String Functions</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2107">
+We consider a string of $n$ characters, indexed $1,2,\dots,n$. Your task is to calculate all values of the following functions:<br />
+<ul>
+<li> $z(i)$ denotes the maximum length of a substring that begins at position $i$ and is a prefix of the string. In addition, $z(1)=0$.<br />
+<li> $\pi(i)$ denotes the maximum length of a substring that ends at position $i$, is a prefix of the string, and whose length is at most $i-1$.<br />
+</ul>
+Note that the function $z$ is used in the Z-algorithm, and the function $\pi$ is used in the KMP algorithm.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line has a string of length $n$. Each character is between a–z.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print two lines: first the values of the $z$ function, and then the values of the $\pi$ function.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^6$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>abaabca</code><br />
+<br />
+Output:<br />
+<code>0 0 1 2 0 0 1<br />
+0 0 1 1 2 0 1</code>    </div>
+    <div class="nav sidebar">
+<h4>String Algorithms</h4>...
+<a  href="/problemset/task/2103">Counting Patterns<span class="task-score icon "></span></a><a  href="/problemset/task/2104">Pattern Positions<span class="task-score icon "></span></a><a  href="/problemset/task/2105">Distinct Substrings<span class="task-score icon "></span></a><a  href="/problemset/task/2106">Repeating Substring<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2107">String Functions<span class="task-score icon "></span></a><a  href="/problemset/task/2108">Substring Order I<span class="task-score icon "></span></a><a  href="/problemset/task/2109">Substring Order II<span class="task-score icon "></span></a><a  href="/problemset/task/2110">Substring Distribution<span class="task-score icon "></span></a>      <hr />

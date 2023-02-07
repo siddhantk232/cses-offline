@@ -1,0 +1,94 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Distinct Substrings</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2105/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2105/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Distinct Substrings</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2105">
+Count the number of distinct substrings that appear in a string.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line has a string of length $n$ that consists of characters a–z.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the number of substrings.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^5$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>abaa</code><br />
+<br />
+Output:<br />
+<code>8</code><br />
+<br />
+Explanation: the substrings are <code>a</code>, <code>b</code>, <code>aa</code>, <code>ab</code>, <code>ba</code>, <code>aba</code>, <code>baa</code> and <code>abaa</code>.    </div>
+    <div class="nav sidebar">
+<h4>String Algorithms</h4>...
+<a  href="/problemset/task/2102">Finding Patterns<span class="task-score icon "></span></a><a  href="/problemset/task/2103">Counting Patterns<span class="task-score icon "></span></a><a  href="/problemset/task/2104">Pattern Positions<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2105">Distinct Substrings<span class="task-score icon "></span></a><a  href="/problemset/task/2106">Repeating Substring<span class="task-score icon "></span></a><a  href="/problemset/task/2107">String Functions<span class="task-score icon "></span></a><a  href="/problemset/task/2108">Substring Order I<span class="task-score icon "></span></a><a  href="/problemset/task/2109">Substring Order II<span class="task-score icon "></span></a>...
+      <hr />

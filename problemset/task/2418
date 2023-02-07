@@ -1,0 +1,113 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Grid Path Construction</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2418/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2418/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Grid Path Construction</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2418">
+Given an $n \times m$ grid and two squares $a=(y_1,x_1)$ and $b=(y_2,x_2)$, create a path from $a$ to $b$ that visits each square exactly once.<br />
+<br />
+For example, here is a path from $a=(1,3)$ to $b=(3,6)$ in a $4 \times 7$ grid:<br />
+<p><center><img class="invertible" src="/file/944079e41a17eca6debb54a7d4da8f9124232206a1d80256432e8a2715c00055"></center></p>
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $t$: the number of tests.<br />
+<br />
+After this, there are $t$ lines that describe the tests. Each line has six integers $n$, $m$, $y_1$, $x_1$, $y_2$ and $x_2$.<br />
+<br />
+In all tests $1 \le y_1,y_2 \le n$ ja $1 \le x_1,x_2 \le m$. In addition, $y_1 \neq y_2$ or $x_1 \neq x_2$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print YES, if it is possible to construct a path, and NO otherwise.<br />
+<br />
+If there is a path, also print its description which consists of characters <code>U</code> (up), <code>D</code> (down), <code>L</code> (left) ja <code>R</code> (right). If there are several paths, you can print any of them.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le t \le 100$<br />
+<li>$1 \le n \le 50$<br />
+<li>$1 \le m \le 50$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5<br />
+1 3 1 1 1 3<br />
+1 3 1 2 1 3<br />
+2 2 1 1 2 2<br />
+2 2 1 1 2 1<br />
+4 7 1 3 3 6</code><br />
+<br />
+Output:<br />
+<code>YES<br />
+RR<br />
+NO<br />
+NO<br />
+YES<br />
+RDL<br />
+YES<br />
+RRRRDDDLLLLLLUUURDDRURDRURD</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/1705">Forbidden Cities<span class="task-score icon "></span></a><a  href="/problemset/task/1741">Area of Rectangles<span class="task-score icon "></span></a><a  href="/problemset/task/2429">Grid Completion<span class="task-score icon "></span></a><a  href="/problemset/task/1752">Creating Offices<span class="task-score icon "></span></a><a  href="/problemset/task/1075">Permutations II<span class="task-score icon "></span></a><a  href="/problemset/task/2415">Functional Graph Distribution<span class="task-score icon "></span></a><a  href="/problemset/task/1685">New Flight Routes<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2418">Grid Path Construction<span class="task-score icon "></span></a>      <hr />

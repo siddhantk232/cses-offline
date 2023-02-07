@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Polynomial Queries</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1736/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1736/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Polynomial Queries</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1736">
+Your task is to maintain an array of $n$ values and efficiently process the following types of queries:<ol>
+<li>Increase the first value in range $[a,b]$ by $1$, the second value by $2$, the third value by $3$, and so on.<br />
+<li>Calculate the sum of values in range $[a,b]$.<br />
+</ol>
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $q$: the size of the array and the number of queries.<br />
+<br />
+The next line has $n$ values $t_1,t_2,\dots,t_n$: the initial contents of the array.<br />
+<br />
+Finally, there are $q$ lines describing the queries. The format of each line is either &quot;1 $a$ $b$&quot; or &quot;2 $a$ $b$&quot;.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print the answer to each sum query.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li> $1 \le n, q \le 2 \cdot 10^5$<br />
+<li> $1 \le t_i \le 10^6$<br />
+<li> $1 \le a \le b \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5 3<br />
+4 2 3 1 7<br />
+2 1 5<br />
+1 1 5<br />
+2 1 5</code><br />
+<br />
+Output:<br />
+<code>17<br />
+32</code>    </div>
+    <div class="nav sidebar">
+<h4>Range Queries</h4>...
+<a  href="/problemset/task/2206">Pizzeria Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1190">Subarray Sum Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1734">Distinct Values Queries<span class="task-score icon "></span></a><a  href="/problemset/task/2416">Increasing Array Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1739">Forest Queries II<span class="task-score icon "></span></a><a  href="/problemset/task/1735">Range Updates and Sums<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1736">Polynomial Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1737">Range Queries and Copies<span class="task-score icon "></span></a>      <hr />

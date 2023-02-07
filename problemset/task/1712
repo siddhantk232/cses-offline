@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Exponentiation II</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1712/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1712/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Exponentiation II</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1712">
+Your task is to efficiently calculate values $a^{b^c}$ modulo $10^9+7$.<br />
+<br />
+Note that in this task we assume that $0^0=1$.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $n$: the number of calculations.<br />
+<br />
+Afther this, there are $n$ lines, each containing three integers $a$, $b$ and $c$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print each value $a^{b^c}$ modulo $10^9+7$.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^5$<br />
+<li>$0 \le a,b,c \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>3<br />
+3 7 1<br />
+15 2 2<br />
+3 4 5</code><br />
+<br />
+Output:<br />
+<code>2187<br />
+50625<br />
+763327764</code>    </div>
+    <div class="nav sidebar">
+<h4>Mathematics</h4><a  href="/problemset/task/2164">Josephus Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1095">Exponentiation<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1712">Exponentiation II<span class="task-score icon "></span></a><a  href="/problemset/task/1713">Counting Divisors<span class="task-score icon "></span></a><a  href="/problemset/task/1081">Common Divisors<span class="task-score icon "></span></a><a  href="/problemset/task/1082">Sum of Divisors<span class="task-score icon "></span></a><a  href="/problemset/task/2182">Divisor Analysis<span class="task-score icon "></span></a><a  href="/problemset/task/2185">Prime Multiples<span class="task-score icon "></span></a>...
+      <hr />

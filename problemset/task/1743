@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>String Reorder</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1743/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1743/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - String Reorder</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1743">
+Given a string, you want to reorder its characters so that no two adjacent characters are the same. What is the lexicographically minimal such string?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line as a string of length $n$ consisting of characters A–Z.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print the lexicographically minimal reordered string where no two adjacent characters are the same. If it is not possible to create such a string, print $-1$.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^6$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>HATTIVATTI</code><br />
+<br />
+Output:<br />
+<code>AHATITITVT</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/1740">Intersection Points<span class="task-score icon "></span></a><a  href="/problemset/task/2214">Inverse Inversions<span class="task-score icon "></span></a><a  href="/problemset/task/2215">Monotone Subsequences<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1743">String Reorder<span class="task-score icon "></span></a><a  href="/problemset/task/2425">Stack Weights<span class="task-score icon "></span></a><a  href="/problemset/task/1747">Pyramid Array<span class="task-score icon "></span></a><a  href="/problemset/task/1748">Increasing Subsequence II<span class="task-score icon "></span></a><a  href="/problemset/task/1149">String Removals<span class="task-score icon "></span></a>...
+      <hr />

@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Grid Completion</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2429/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2429/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Grid Completion</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2429">
+Your task is to create an $n \times n$ grid whose each row and column has exactly one A and B. Some of the characters have already been placed. In how many ways can you complete the grid?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $n$: the size of the grid.<br />
+<br />
+After this, there are $n$ lines that describe the grid. Each line has $n$ characters: <code>.</code> means an empty square, and <code>A</code> and <code>B</code> show the characters already placed.<br />
+<br />
+You can assume that every row and column has at most one A and B.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the number of ways modulo $10^9+7$.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li> $2 \le n \le 500$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5<br />
+.....<br />
+..AB.<br />
+.....<br />
+B....<br />
+...A.</code><br />
+<br />
+Output:<br />
+<code>16</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/1701">Tree Isomorphism II<span class="task-score icon "></span></a><a  href="/problemset/task/1705">Forbidden Cities<span class="task-score icon "></span></a><a  href="/problemset/task/1741">Area of Rectangles<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2429">Grid Completion<span class="task-score icon "></span></a><a  href="/problemset/task/1752">Creating Offices<span class="task-score icon "></span></a><a  href="/problemset/task/1075">Permutations II<span class="task-score icon "></span></a><a  href="/problemset/task/2415">Functional Graph Distribution<span class="task-score icon "></span></a><a  href="/problemset/task/1685">New Flight Routes<span class="task-score icon "></span></a>...
+      <hr />

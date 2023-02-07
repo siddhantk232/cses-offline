@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Cycle Finding</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1197/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1197/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Cycle Finding</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1197">
+You are given a directed graph, and your task is to find out if it contains a negative cycle, and also give an example of such a cycle.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the number of nodes and edges. The nodes are numbered $1,2,\ldots,n$.<br />
+<br />
+After this, the input has $m$ lines describing the edges. Each line has three integers $a$, $b$, and $c$: there is an edge from node $a$ to node $b$ whose length is $c$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+If the graph contains a negative cycle, print first &quot;YES&quot;, and then the nodes in the cycle in their correct order. If there are several negative cycles, you can print any of them. If there are no negative cycles, print &quot;NO&quot;.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 2500$<br />
+<li>$1 \le m \le 5000$<br />
+<li>$1 \le a,b \le n$<br />
+<li>$-10^9 \le c \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4 5<br />
+1 2 1<br />
+2 4 1<br />
+3 1 1<br />
+4 1 -3<br />
+4 3 -2</code><br />
+<br />
+Output:<br />
+<code>YES<br />
+1 2 4 1</code>    </div>
+    <div class="nav sidebar">
+<h4>Graph Algorithms</h4>...
+<a  href="/problemset/task/1672">Shortest Routes II<span class="task-score icon "></span></a><a  href="/problemset/task/1673">High Score<span class="task-score icon "></span></a><a  href="/problemset/task/1195">Flight Discount<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1197">Cycle Finding<span class="task-score icon "></span></a><a  href="/problemset/task/1196">Flight Routes<span class="task-score icon "></span></a><a  href="/problemset/task/1678">Round Trip II<span class="task-score icon "></span></a><a  href="/problemset/task/1679">Course Schedule<span class="task-score icon "></span></a><a  href="/problemset/task/1680">Longest Flight Route<span class="task-score icon "></span></a>...
+      <hr />

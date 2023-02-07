@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Task Assignment</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2129/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2129/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Task Assignment</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2129">
+A company has $n$ employees and there are $n$ tasks that need to be done. We know for each employee the cost of carrying out each task. Every employee should be assigned to exactly one task. What is the minimum total cost if we assign the tasks optimally and how could they be assigned?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has one integer $n$: the number of employees and the number of tasks that need to be done.<br />
+<br />
+After this, there are $n$ lines each consisting of $n$ integers. The $i$th line consists of integers $c_{i1},c_{i2},\ldots,c_{in}$: the cost of each task when it is assigned to the $i$th employee.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+First print the minimum total cost.<br />
+<br />
+Then print n lines each consisting of two integers $a$ and $b$: you assign the $b$th task to the $a$th employee.<br />
+ <br />
+If there are multiple solutions you can print any of them.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 200$<br />
+<li>$1 \le c_{ij} \le 1000$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4<br />
+17 8 16 9<br />
+7 15 12 19<br />
+6 9 10 11<br />
+14 7 13 10</code><br />
+<br />
+Output:<br />
+<code>33<br />
+1 4<br />
+2 1<br />
+3 3<br />
+4 2</code><br />
+<br />
+Explanation: The minimum total cost is $33$. We can reach this by assigning employee 1 task 4, employee 2 task 1, employee 3 task 3 and employee 4 task 2. This will cost $9 + 7 + 10 + 7 = 33$.    </div>
+    <div class="nav sidebar">
+<h4>Advanced Techniques</h4>...
+<a  href="/problemset/task/2111">Apples and Bananas<span class="task-score icon "></span></a><a  href="/problemset/task/2112">One Bit Positions<span class="task-score icon "></span></a><a  href="/problemset/task/2113">Signal Processing<span class="task-score icon "></span></a><a  href="/problemset/task/2101">New Roads Queries<span class="task-score icon "></span></a><a  href="/problemset/task/2133">Dynamic Connectivity<span class="task-score icon "></span></a><a  href="/problemset/task/2121">Parcel Delivery<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2129">Task Assignment<span class="task-score icon "></span></a><a  href="/problemset/task/2130">Distinct Routes II<span class="task-score icon "></span></a>      <hr />

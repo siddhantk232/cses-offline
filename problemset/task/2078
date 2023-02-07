@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Eulerian Subgraphs</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2078/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2078/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Eulerian Subgraphs</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2078">
+You are given an undirected graph that has $n$ nodes and $m$ edges.<br />
+<br />
+We consider subgraphs that have all nodes of the original graph and some of its edges. A subgraph is called <i>Eulerian</i> if each node has even degree.<br />
+<br />
+Your task is to count the number of Eulerian subgraphs modulo $10^9+7$.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line has two integers $n$ and $m$: the number of nodes and edges. The nodes are numbered $1,2,\dots,n$.<br />
+<br />
+After this, there are $m$ lines that describe the edges. Each line has two integers $a$ and $b$: there is an edge between nodes $a$ and $b$. There is at most one edge between two nodes, and each edge connects two distinct nodes.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print the number of Eulerian subgraphs modulo $10^9+7$.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le n \le 10^5$<br />
+<li>$0 \le m \le 2 \cdot 10^5$<br />
+<li>$1 \le a,b \le n$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>4 3<br />
+1 2<br />
+1 3<br />
+2 3</code><br />
+<br />
+Output:<br />
+<code>2</code><br />
+<br />
+Explanation: You can either keep or remove all edges, so there are two possible Eulerian subgraphs.    </div>
+    <div class="nav sidebar">
+<h4>Advanced Techniques</h4>...
+<a  href="/problemset/task/2074">Reversals and Sums<span class="task-score icon "></span></a><a  href="/problemset/task/2076">Necessary Roads<span class="task-score icon "></span></a><a  href="/problemset/task/2077">Necessary Cities<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2078">Eulerian Subgraphs<span class="task-score icon "></span></a><a  href="/problemset/task/2084">Monster Game I<span class="task-score icon "></span></a><a  href="/problemset/task/2085">Monster Game II<span class="task-score icon "></span></a><a  href="/problemset/task/2086">Subarray Squares<span class="task-score icon "></span></a><a  href="/problemset/task/2087">Houses and Schools<span class="task-score icon "></span></a>...
+      <hr />

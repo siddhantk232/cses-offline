@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Sliding Median</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1076/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1076/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Sliding Median</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1076">
+You are given an array of $n$ integers. Your task is to calculate the median of each window of $k$ elements, from left to right.<br />
+<br />
+The median is the middle element when the elements are sorted. If the number of elements is even, there are two possible medians and we assume that the median is the smaller of them.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains two integers $n$ and $k$: the number of elements and the size of the window.<br />
+<br />
+Then there are $n$ integers $x_1,x_2,\ldots,x_n$: the contents of the array.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print $n-k+1$ values: the medians.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le k \le n \le 2 \cdot 10^5$<br />
+<li>$1 \le x_i \le 10^9$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>8 3<br />
+2 4 3 5 8 1 2 1</code><br />
+<br />
+Output:<br />
+<code>3 4 5 5 2 1</code>    </div>
+    <div class="nav sidebar">
+<h4>Sorting and Searching</h4>...
+<a  href="/problemset/task/1661">Subarray Sums II<span class="task-score icon "></span></a><a  href="/problemset/task/1662">Subarray Divisibility<span class="task-score icon "></span></a><a  href="/problemset/task/2428">Subarray Distinct Values<span class="task-score icon "></span></a><a  href="/problemset/task/1085">Array Division<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1076">Sliding Median<span class="task-score icon "></span></a><a  href="/problemset/task/1077">Sliding Cost<span class="task-score icon "></span></a><a  href="/problemset/task/1632">Movie Festival II<span class="task-score icon "></span></a><a  href="/problemset/task/1644">Maximum Subarray Sum II<span class="task-score icon "></span></a>      <hr />

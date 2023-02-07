@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Filling Trominos</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2423/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2423/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Filling Trominos</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2423">
+Your task is to fill an $n \times m$ grid using L-trominos (three squares that have an L-shape). For example, here is one way to fill a $4 \times 6$ grid:<br />
+<p><center><img class="invertible" src="/file/da3ce928fcf66fd793d582a1a5ad7f7f9cc37e68aa2aadacee90f99bc4271692"></center></p>
+<b id="input">Input</b><br />
+<br />
+The first input line has an integer $t$: the number of tests.<br />
+<br />
+After that, there are $t$ lines that describe the tests. Each line has two integers $n$ and $m$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+For each test, print YES if there is a solution, and NO otherwise.<br />
+<br />
+If there is a solution, also print $n$ lines that each contain $m$ letters between A–Z. Adjacent squares must have the same letter exactly when they belong to the same tromino. You can print any valid solution.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le t \le 100$<br />
+<li>$1 \le n,m \le 100$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>2<br />
+4 6<br />
+4 7</code><br />
+<br />
+Output:<br />
+<code>YES<br />
+AADDBB<br />
+ACCDEB<br />
+BCAEEC<br />
+BBAACC<br />
+NO</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/2184">Missing Coin Sum Queries<span class="task-score icon "></span></a><a  href="/problemset/task/1157">Number Grid<span class="task-score icon "></span></a><a  href="/problemset/task/1148">Maximum Building II<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2423">Filling Trominos<span class="task-score icon "></span></a><a  href="/problemset/task/1161">Stick Divisions<span class="task-score icon "></span></a><a  href="/problemset/task/1665">Coding Company<span class="task-score icon "></span></a><a  href="/problemset/task/1699">Flight Route Requests<span class="task-score icon "></span></a><a  href="/problemset/task/2402">Two Stacks Sorting<span class="task-score icon "></span></a>...
+      <hr />

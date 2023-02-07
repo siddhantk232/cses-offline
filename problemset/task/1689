@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Knight's Tour</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1689/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1689/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Knight's Tour</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1689">
+Given a starting position of a knight on an $8 \times 8$ chessboard, your task is to find a sequence of moves such that it visits every square exactly once.<br />
+<br />
+On each move, the knight may either move two steps horizontally and one step vertically, or one step horizontally and two steps vertically.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only line has two integers $x$ and $y$: the knight's starting position.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print a grid that shows how the knight moves (according to the example). You can print any valid solution.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le x,y \le 8$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>2 1</code><br />
+<br />
+Output:<br />
+<code>8 1 10 13 6 3 20 17 <br />
+11 14 7 2 19 16 23 4 <br />
+26 9 12 15 24 5 18 21 <br />
+49 58 25 28 51 22 33 30 <br />
+40 27 50 59 32 29 52 35 <br />
+57 48 41 44 37 34 31 62 <br />
+42 39 46 55 60 63 36 53 <br />
+47 56 43 38 45 54 61 64</code>    </div>
+    <div class="nav sidebar">
+<h4>Graph Algorithms</h4>...
+<a  href="/problemset/task/1692">De Bruijn Sequence<span class="task-score icon "></span></a><a  href="/problemset/task/1693">Teleporters Path<span class="task-score icon "></span></a><a  href="/problemset/task/1690">Hamiltonian Flights<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1689">Knight's Tour<span class="task-score icon "></span></a><a  href="/problemset/task/1694">Download Speed<span class="task-score icon "></span></a><a  href="/problemset/task/1695">Police Chase<span class="task-score icon "></span></a><a  href="/problemset/task/1696">School Dance<span class="task-score icon "></span></a><a  href="/problemset/task/1711">Distinct Routes<span class="task-score icon "></span></a>      <hr />

@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Rectangle Cutting</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1744/" class="current">Task</a></li>
+<li><a href="/problemset/stats/1744/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Rectangle Cutting</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="1744">
+Given an $a \times b$ rectangle, your task is to cut it into squares. On each move you can select a rectangle and cut it into two rectangles in such a way that all side lengths remain integers. What is the minimum possible number of moves?<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line has two integers $a$ and $b$.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the minimum number of moves.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le a,b \le 500$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>3 5</code><br />
+<br />
+Output:<br />
+<code>3</code>    </div>
+    <div class="nav sidebar">
+<h4>Dynamic Programming</h4>...
+<a  href="/problemset/task/1746">Array Description<span class="task-score icon "></span></a><a  href="/problemset/task/2413">Counting Towers<span class="task-score icon "></span></a><a  href="/problemset/task/1639">Edit Distance<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1744">Rectangle Cutting<span class="task-score icon "></span></a><a  href="/problemset/task/1745">Money Sums<span class="task-score icon "></span></a><a  href="/problemset/task/1097">Removal Game<span class="task-score icon "></span></a><a  href="/problemset/task/1093">Two Sets II<span class="task-score icon "></span></a><a  href="/problemset/task/1145">Increasing Subsequence<span class="task-score icon "></span></a>...
+      <hr />

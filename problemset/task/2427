@@ -1,0 +1,112 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Letter Pair Move Game</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2427/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2427/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Letter Pair Move Game</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2427">
+There are $2n$ boxes in a line. Two adjacent boxes are empty, and all other boxes have a letter &quot;A&quot; or &quot;B&quot;. Both letters appear in exactly $n-1$ boxes.<br />
+<br />
+Your task is to move the letters so that all letters &quot;A&quot; appear before any letter &quot;B&quot;. On each turn you can choose any two adjacent boxes that have a letter and move the letters to the two adjacent empty boxes, preserving their order.<br />
+<br />
+It can be proven that either there is a solution that consists of at most $10n$ turns or there are no solutions.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first line has an integer $n$: there are $2n$ boxes.<br />
+<br />
+The second line has a string of $2n$ characters which describes the starting position. Each character is &quot;A&quot;, &quot;B&quot; or &quot;.&quot; (empty box).<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+First print an integer $k$: the number of turns. After this, print $k$ lines that describe the moves. You can print any solution, as long as $k \le 1000$.<br />
+<br />
+If there are no solutions, print only &quot;-1&quot;.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li> $1 \le n \le 100$<br />
+</ul>
+<b id="example1">Example 1</b><br />
+<br />
+Input:<br />
+<code>3<br />
+AB..BA</code><br />
+<br />
+Output:<br />
+<code>2<br />
+ABBA..<br />
+A..ABB</code><br />
+<br />
+<b id="example2">Example 2</b><br />
+<br />
+Input:<br />
+<code>3<br />
+ABAB..</code><br />
+<br />
+Output:<br />
+<code>-1</code>    </div>
+    <div class="nav sidebar">
+<h4>Additional Problems</h4>...
+<a  href="/problemset/task/2419">Xor Pyramid<span class="task-score icon "></span></a><a  href="/problemset/task/1086">Writing Numbers<span class="task-score icon "></span></a><a  href="/problemset/task/1113">String Transform<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2427">Letter Pair Move Game<span class="task-score icon "></span></a><a  href="/problemset/task/1147">Maximum Building I<span class="task-score icon "></span></a><a  href="/problemset/task/1162">Sorting Methods<span class="task-score icon "></span></a><a  href="/problemset/task/1191">Cyclic Array<span class="task-score icon "></span></a><a  href="/problemset/task/2414">List of Sums<span class="task-score icon "></span></a>...
+      <hr />

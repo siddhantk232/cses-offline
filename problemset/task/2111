@@ -1,0 +1,102 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?4" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?4" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/login">Login</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Apples and Bananas</h1>
+<ul class="nav">
+<li><a href="/problemset/task/2111/" class="current">Task</a></li>
+<li><a href="/problemset/stats/2111/" >Statistics</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Apples and Bananas</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+<input type="hidden" name="course" value="problemset">
+<input type="hidden" name="task" value="2111">
+There are apples and bananas and each of them has an integer weight between $1 \ldots k$. Your task is to calculate for each weight $w$ between $2...2k$ the number of ways we can choose an apple and a banana whose combined weight is $w$.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The first input line contains three integers $k$, $n$ and $m$: the number $k$, the number of apples and the number of bananas.<br />
+<br />
+The next line contains $n$ integers $a_1,a_2,\ldots,a_n$: weight of each apple.<br />
+<br />
+The last line contains $m$ integers $b_1,b_2,\ldots,b_m$: weight of each banana.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+For each integer $w$ between $2 \ldots 2k$ print the number of ways to choose an apple and a banana whose combined weight is $w$.<br />
+<br />
+<b id="constraints">Constraints</b><br />
+<ul>
+<li>$1 \le k,n,m \le 2 \cdot 10^5$<br />
+<li>$1 \le a_i \le k$<br />
+<li>$1 \le b_i \le k$<br />
+</ul>
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>5 3 4<br />
+5 2 5<br />
+4 3 2 3<br />
+</code><br />
+Output:<br />
+<code>0 0 1 2 1 2 4 2 0  </code><br />
+<br />
+Explanation: For example for $w$ = $8$ there are $4$ different ways: we can pick an apple of weight $5$ in two different ways and a banana of weight $3$ in two different ways.    </div>
+    <div class="nav sidebar">
+<h4>Advanced Techniques</h4>...
+<a  href="/problemset/task/2086">Subarray Squares<span class="task-score icon "></span></a><a  href="/problemset/task/2087">Houses and Schools<span class="task-score icon "></span></a><a  href="/problemset/task/2088">Knuth Division<span class="task-score icon "></span></a><a class="current" href="/problemset/task/2111">Apples and Bananas<span class="task-score icon "></span></a><a  href="/problemset/task/2112">One Bit Positions<span class="task-score icon "></span></a><a  href="/problemset/task/2113">Signal Processing<span class="task-score icon "></span></a><a  href="/problemset/task/2101">New Roads Queries<span class="task-score icon "></span></a><a  href="/problemset/task/2133">Dynamic Connectivity<span class="task-score icon "></span></a>...
+      <hr />
