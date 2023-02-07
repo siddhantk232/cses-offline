@@ -2,7 +2,7 @@ import { load } from "cheerio";
 import { writeFileSync, mkdirSync, createWriteStream } from "fs";
 import { writeFile } from "fs/promises";
 import fetch from "node-fetch";
-import request from "request";
+import https from "https";
 
 const htmlText = await fetch("https://cses.fi/problemset/list/").then((r) =>
   r.text()
@@ -15,8 +15,9 @@ const links = $("[href]");
 writeFileSync("index.html", htmlText);
 
 function download(uri, filename, callback) {
-  request.head(uri, function () {
-    request(uri).pipe(createWriteStream(filename)).on("close", callback);
+  https.get(uri, (res) => {
+    res.pipe(createWriteStream(filename));
+    res.on("close", callback);
   });
 }
 
